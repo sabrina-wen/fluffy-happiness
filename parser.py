@@ -32,4 +32,7 @@ The file follows the following format:
 See the file script for an example of the file format
 """
 def parse_file( fname, points, transform, screen, color ):
-    pass
+    file = open(fname, "r")
+    for line in file:
+        if (file.read(line) == "line"):
+            add_edge(points)
